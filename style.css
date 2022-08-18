@@ -1,0 +1,48 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.table {
+  background-color: #3f88c5;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 40vw;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 0.5rem;
+
+  background-color: #fffa62;
+  width: 40vw;
+  padding: 0.5rem;
+
+  border-radius: 0.625rem;
+  box-shadow: 0.875rem 0.875rem 0 0 #0004;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 5rem;
+  height: 6rem;
+  background-color: #ffcf7f;
+  border-radius: 0.625rem;
+}
