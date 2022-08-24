@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 :root {
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
 }
 
 * {
@@ -22,6 +25,14 @@ body {
   width: 40vw;
 }
 
+.title {
+  color: #fff;
+}
+
+.score {
+  color: #fff;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -41,12 +52,22 @@ body {
   align-items: center;
   justify-content: center;
 
+  font-weight: 700;
   width: 5rem;
   height: 6rem;
   background-color: #ffcf7f;
   border-radius: 0.625rem;
+
+  cursor: pointer;
+  color: transparent;
+
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
 }
 
 .open {
-  background-color: red;
+  background-color: #ff9090;
+  color: #fff;
+  transform: rotateY(0deg);
 }
