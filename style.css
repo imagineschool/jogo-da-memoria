@@ -46,3 +46,7 @@ body {
   background-color: #ffcf7f;
   border-radius: 0.625rem;
 }
+
+.open {
+  background-color: red;
+}
